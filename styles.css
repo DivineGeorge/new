@@ -1,0 +1,39 @@
+body {
+	background-image: url(sunrise.jpg);
+	background-position: top;
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-color: #000000;
+	/* background: linear-gradient(90deg, rgba(177, 64, 200, 1) 0%, rgba(109, 9, 121, 1) 35%, rgba(45, 1, 62, 1) 100%); */
+}
+
+
+.glow {
+	font-size: 90px;
+	text-align: center; 
+	margin-top: 300px;
+	color: #000000;
+	cursor: pointer;
+	-webkit-animation: glow 1s ease-in-out infinite alternate;
+	-moz-animation: glow 1s ease-in-out infinite alternate;
+	animation: glow 1s ease-in-out infinite alternate;
+}
+ 
+.glow:hover {
+	color: #16c599;
+}
+
+@-webkit-keyframes glow {
+	from {
+		text-shadow: 0 0 10px #071d9b, 0 0 20px #000000, 
+		0 0 30px #000000, 0 0 40px #000000, 0 0 50px #e20a0a, 
+		0 0 60px #f00404, 0 0 70px #e20909;
+	}
+	to {
+		text-shadow: 0 0 20px #eeeeee, 0 0 30px #2f10e0, 
+		0 0 40px #000000, 0 0 50px #050204, 0 0 60px #16c599, 
+		0 0 70px #16c599, 0 0 80px #16c599;
+	}
+}
+
+
